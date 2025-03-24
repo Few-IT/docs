@@ -1,0 +1,16 @@
+{
+  "name": "docs-honkit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cd content && honkit serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "honkit": "^6.0.2",
+    "honkit-plugin-api-documentation": "^0.2.1"
+  }
+}

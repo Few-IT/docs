@@ -1,0 +1,6 @@
+{
+  "styles": {
+    "website": "style-website.css"
+  },
+  "plugins": ["honkit-plugin-api-documentation"]
+}
