@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+/* base font */
+body .book.font-family-1,
+.book-summary {
+  font-family: Open Sans, Helvetica Neue, Arial, sans-serif;
+}
+
+/* sidebar scroll beautification */
+.book-summary::-webkit-scrollbar {
+  width: 15px;
+}
+.book-summary::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 4px;
+}
+.book-summary:hover::-webkit-scrollbar-thumb {
+  background: hsla(0, 0%, 53%, 0.4);
+}
+.book-summary:hover::-webkit-scrollbar-track {
+  background: hsla(0, 0%, 53%, 0.1);
+}
+
+/* sidebar background */
+.book-summary {
+  background-color: #ffffff;
+}
+
+/* sidebar items */
+.book-summary ul.summary li a,
+.book-summary ul.summary li span {
+  text-overflow: initial;
+  white-space: normal;
+  line-height: 1.4em;
+  padding: 9px 10px 9px 6px;
+}
+.book-summary ul.summary li.chapter {
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.book-summary ul.summary > li.chapter:before {
+  position: absolute;
+  content: " ";
+  background-color: #f4f4f5;
+  width: 2px;
+  left: 27px;
+  top: 39px;
+  bottom: 0px;
+}
+.book-summary ul.summary li.chapter span {
+  font-weight: 600;
+}
+.book-summary ul.summary li.chapter a {
+  text-indent: -41px;
+  padding-left: 51px;
+}
+.book-summary ul.summary li.chapter a:hover,
+.book-summary ul.summary li.chapter.active a {
+  background-color: #f4f4f5;
+  font-weight: bold;
+  border-radius: 6px;
+  text-decoration: none;
+}
+.book-summary ul.summary li span:before {
+  content: "📄";
+  margin-right: 2px;
+  font-size: 1.2em;
+}
+.book-summary ul.summary li.divider {
+  margin: 18px 0 7px;
+}
