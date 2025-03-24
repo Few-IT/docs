@@ -1,4 +1,4 @@
-name: 'deploy website'
+name: "deploy website"
 
 on:
   push:
@@ -17,6 +17,9 @@ jobs:
         with:
           node-version: 22
       - run: npm install
+      - name: "Generating distributable files"
+        run: |
+          mv content/* .
       - run: npm run build
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
