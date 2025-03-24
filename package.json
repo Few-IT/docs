@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "cd content && honkit serve"
+    "dev": "cd content && honkit serve",
+    "build": "honkit build"
   },
   "keywords": [],
   "author": "",
